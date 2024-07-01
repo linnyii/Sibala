@@ -13,6 +13,9 @@ public class Player
 
     public void GetPoints()
     {
-        Points = Dice.Distinct().Count();
+        if (Dice.Distinct().Count() == 4)
+            Points = 0;
+        if (Dice.Distinct().Count() == 2)
+            Points = 0;
     }
 }
