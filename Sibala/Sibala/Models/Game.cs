@@ -19,6 +19,17 @@ public class Game()
         {
             return "Draw, No Points";
         }
+        
+        if (Player1.AllTheSameKind)
+        {
+            return "Player1 Win, All The Same Kind";
+        }
+        
+        if (Player2.AllTheSameKind)
+        {
+            return "Player2 Win, All The Same Kind";
+        }
+        
         return "";
     }
 }
